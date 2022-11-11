@@ -1,20 +1,20 @@
-local acik, RLCore, PlayerData, cender = false, nil, nil, nil
+local acik, QBCore, PlayerData, cender = false, nil, nil, nil
 
 
 Citizen.CreateThread(function ()
-    while RLCore == nil do
+    while QBCore == nil do
         Citizen.Wait(0)
-        TriggerEvent("RLCore:GetObject", function (obj) RLCore = obj
+        TriggerEvent("QBCore:GetObject", function (obj) QBCore = obj
         end)
-        while RLCore.Functions.GetPlayerData() == nil do
+        while QBCore.Functions.GetPlayerData() == nil do
             Citizen.Wait(10)
         end
-        PlayerData = RLCore.Functions.GetPlayerData()
+        PlayerData = QBCore.Functions.GetPlayerData()
     end
 end)
 
-RegisterNetEvent("RLCore:Client:OnJobUpdate")
-AddEventHandler("RLCore:Client:OnJobUpdate", function (meslk)
+RegisterNetEvent("QBCore:Client:OnJobUpdate")
+AddEventHandler("QBCore:Client:OnJobUpdate", function (meslk)
     PlayerData.job = meslk
 end)
 
