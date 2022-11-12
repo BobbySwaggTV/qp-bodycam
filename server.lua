@@ -14,9 +14,10 @@ end)
 QBCore.Functions.CreateUseableItem = function(bodycam, cb)
     QBCore.UseableItems[bodycam] = cb
 end    
-    local _src = source
-    TriggerClientEvent("mbl-body:openBoy", _src, item, tonumber(os.date("%H")), tonumber(os.date("%M")), tonumber(os.date("%S")))
-end)
+    --local _src = source
+    --TriggerClientEvent("mbl-body:openBoy", _src, item, tonumber(os.date("%H")), tonumber(os.date("%M")), tonumber(os.date("%S")))
+--end
+TriggerClientEvent("mbl-body:openBoy", cb, item, tonumber(os.date("%H")), tonumber(os.date("%M")), tonumber(os.date("%S")))
 
 CreateThread(function ()
     while acik do
