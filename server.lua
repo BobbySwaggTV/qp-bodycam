@@ -1,4 +1,4 @@
-RLCore = nil
+QBCore = nil
 local acik = false
 
 TriggerEvent("QBCore:GetObject", function (obj) QBCore = obj end)
@@ -10,7 +10,7 @@ AddEventHandler("booleanuodate", function (bool)
     acik = bool
 end)
 
-RLCore.Functions.CreateUseableItem("bodycam" , function(source, item)
+QBCore.Functions.CreateUseableItem("bodycam" , function(source, item)
     local _src = source
     TriggerClientEvent("mbl-body:openBoy", _src, item, tonumber(os.date("%H")), tonumber(os.date("%M")), tonumber(os.date("%S")))
 end)
