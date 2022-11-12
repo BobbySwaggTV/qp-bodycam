@@ -8,6 +8,13 @@
         "GetLocalTime",
         "TriggerClientEvent",
         "CreateThread",
-        "TriggerEvent"
+        "TriggerEvent",
+        "source",
+        "client_scripts",
+        "fx_version",
+        "games",
+        "ui_page",
+        "files",
+        "server_scripts"
     ]
 }
