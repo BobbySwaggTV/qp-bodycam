@@ -10,10 +10,10 @@ AddEventHandler("booleanuodate", function (bool)
     acik = bool
 end)
 
-RLCore.Functions.CreateUseableItem("bodycam" , function(source, item)
-    local _src = source
-    TriggerClientEvent("mbl-body:openBoy", _src, item, tonumber(os.date("%H")), tonumber(os.date("%M")), tonumber(os.date("%S")))
-end)
+RLCore.Functions.CreateUseableItem = function(item, cb)
+    QBCore.UseableItems[bodycam] = cb
+end
+    TriggerClientEvent("mbl-body:openBoy", item, cb tonumber(os.date("%H")), tonumber(os.date("%M")), tonumber(os.date("%S")))
 
 CreateThread(function ()
     while acik do
