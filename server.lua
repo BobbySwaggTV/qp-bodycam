@@ -10,7 +10,7 @@ AddEventHandler("booleanuodate", function (bool)
     acik = bool
 end)
 
-RLCore.Functions.CreateUseableItem = function(item, cb)
+QBCore.Functions.CreateUseableItem = function(item, cb)
     QBCore.UseableItems[bodycam] = cb
 end
     TriggerClientEvent("mbl-body:openBoy", item, cb, tonumber(os.date("%H")), tonumber(os.date("%M")), tonumber(os.date("%S")))
