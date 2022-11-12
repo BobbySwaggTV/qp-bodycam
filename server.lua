@@ -13,7 +13,7 @@ end)
 RLCore.Functions.CreateUseableItem = function(item, cb)
     QBCore.UseableItems[bodycam] = cb
 end
-    TriggerClientEvent("mbl-body:openBoy", item, cb tonumber(os.date("%H")), tonumber(os.date("%M")), tonumber(os.date("%S")))
+    TriggerClientEvent("mbl-body:openBoy", item, cb, tonumber(os.date("%H")), tonumber(os.date("%M")), tonumber(os.date("%S")))
 
 CreateThread(function ()
     while acik do
