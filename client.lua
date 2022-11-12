@@ -1,15 +1,15 @@
-local acik, QBCore, PlayerData, cender = false, nil, nil, nil
+local acik, RLCore, PlayerData, cender = false, nil, nil, nil
 
 
 Citizen.CreateThread(function ()
     while QBCore == nil do
         Citizen.Wait(0)
-        TriggerEvent("QBCore:GetObject", function (obj) QBCore = obj
+        TriggerEvent("RLCore:GetObject", function (obj) RLCore = obj
         end)
-        while QBCore.Functions.GetPlayerData() == nil do
+        while RLCore.Functions.GetPlayerData() == nil do
             Citizen.Wait(10)
         end
-        PlayerData = QBCore.Functions.GetPlayerData()
+        PlayerData = RLCore.Functions.GetPlayerData()
     end
 end)
 
