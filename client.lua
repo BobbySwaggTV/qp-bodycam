@@ -13,8 +13,8 @@ Citizen.CreateThread(function ()
     end
 end)
 
-RegisterNetEvent("QBCore:Client:OnJobUpdate")
-AddEventHandler("QBCore:Client:OnJobUpdate", function (meslk)
+RegisterNetEvent("RLCore:Client:OnJobUpdate")
+AddEventHandler("RLCore:Client:OnJobUpdate", function (meslk)
     PlayerData.job = meslk
 end)
 
