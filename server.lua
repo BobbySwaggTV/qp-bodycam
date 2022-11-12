@@ -11,7 +11,7 @@ AddEventHandler("booleanuodate", function (bool)
 end)
 
 --RLCore.Functions.CreateUseableItem("bodycam" , function(source, item)
-QBCore.Functions.CreateUseableItem = function(bodycam, cb)
+QBCore.Functions.CreateUseableItem = function(item, cb)
     QBCore.UseableItems[bodycam] = cb
 end    
     --local _src = source
