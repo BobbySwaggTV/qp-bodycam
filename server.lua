@@ -1,7 +1,7 @@
-RLCore = nil
+QBCore = nil
 local acik = false
 
-TriggerEvent("RLCore:GetObject", function (obj) RLCore = obj end)
+TriggerEvent("QBCore:GetObject", function (obj) QBCore = obj end)
 
 
 
