@@ -1,0 +1,13 @@
+{
+    "Lua.diagnostics.globals": [
+        "RegisterNetEvent",
+        "AddEventHandler",
+        "Citizen",
+        "SendNUIMessage",
+        "TriggerServerEvent",
+        "GetLocalTime",
+        "TriggerClientEvent",
+        "CreateThread",
+        "TriggerEvent"
+    ]
+}
